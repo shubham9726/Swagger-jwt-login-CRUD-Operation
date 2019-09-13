@@ -24,9 +24,7 @@ public class UserRepositoryImpl implements UserRepository {
   @Autowired
   public UserRepositoryImpl(MongoTemplate mongoTemplate) {
     this.mongoTemplate = mongoTemplate;
-
   }
-
   @Override
   public User saveUser(User user) {
     return mongoTemplate.save(user);
