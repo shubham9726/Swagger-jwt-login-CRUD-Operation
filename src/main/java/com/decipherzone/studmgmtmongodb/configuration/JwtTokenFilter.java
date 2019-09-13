@@ -13,7 +13,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 public class JwtTokenFilter extends OncePerRequestFilter {
-
   private JwtTokenProvider jwtTokenProvider;
 
   public JwtTokenFilter(JwtTokenProvider jwtTokenProvider) {
